@@ -35,6 +35,7 @@ function ExperienceImage({image_path}){
             priority
             //TODO: change to image path later
             //src="/images/profile.jpg"
+            //src={image_path}
             src={images(`./${image_path}.png`)}
             className="img-responsive position-relative start-0"  //right now, the dimensions in border rectangle clash with what's below. Fix later
             //height={144}
