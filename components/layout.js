@@ -34,7 +34,7 @@ export default function Layout({ children, home }) {
             
             <Image
               priority
-              src="/images/profile.jpg"
+              src="/images/profile.png"
               className="img-responsive"
               height={200}
               width={260}
