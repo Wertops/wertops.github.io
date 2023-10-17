@@ -3,8 +3,10 @@
  */
 const nextConfig = {
     output: 'export',
-    images: {unoptimized:true},
-    distDir: 'docs'
+    //images: {unoptimized:true},
+    distDir: 'docs',
+    basePath: '',
+    assetPrefix: '/'
     
     // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
     // trailingSlash: true,
