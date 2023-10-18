@@ -5,14 +5,15 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'Ella Carter';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'Ella Carters Personal Page';
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
-        {/*<div className="container-flex m-4 bg-white">*/}
+    <>
+    
+    <div className={styles.container} >
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Treelogo.ico" />
         
         <meta
           name="description"
@@ -20,9 +21,6 @@ export default function Layout({ children, home }) {
         />
         <meta
           property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle,
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -44,9 +42,8 @@ export default function Layout({ children, home }) {
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           
           </>
-        ) : (
-          <>
-            <Link href="/">
+        ) : (<></>)}</header>
+            {/*<Link href="/">
               <Image
                 priority
                 src="/images/profile.png"
@@ -61,9 +58,10 @@ export default function Layout({ children, home }) {
                 {name}
               </Link>
             </h2>
-          </>
-        )}
-      </header>
+        </>*/}
+          
+        
+      
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
@@ -71,6 +69,8 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
+    
+    </>
     
   );
 }
