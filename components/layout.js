@@ -11,7 +11,6 @@ export default function Layout({ children, home }) {
   return (
     <>
     
-    <div className={styles.container} >
       <Head>
         <link rel="icon" href="/Treelogo.ico" />
         
@@ -25,6 +24,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <div className={styles.container} >
       <header className={styles.header}>
         {home ? (
           <>
