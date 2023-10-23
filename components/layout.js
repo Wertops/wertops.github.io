@@ -17,7 +17,7 @@ export default function Layout({ children, home }) {
         
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Ella Carter's Personal Website"
         />
         <meta
           property="og:image"
