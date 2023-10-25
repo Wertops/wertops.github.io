@@ -69,7 +69,7 @@ export default function Home ({ allPostsData }) {
       </Head>
       
       <section className={utilStyles.headingMd}>
-        <p>Hi! My name is Ella, and I just graduated with my degree in Computer Science from UNC Chapel Hill! I also minored in environmental science. I am looking for a job related to sustainability. Please reach out if you are interested in hiring me!</p>
+        <p>Hi! My name is Ella, and I just graduated with my degree in Computer Science from UNC Chapel Hill! I also minored in environmental science. I am currently looking for a job. Please reach out if you are interested in hiring me!</p>
        <p>
           <Link href="/posts/contactme">Click Here to Contact Me!</Link>
   </p>
