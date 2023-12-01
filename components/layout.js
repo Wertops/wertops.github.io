@@ -29,16 +29,17 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
          
-            
-            <Image
-              priority
-              src="/images/profile.png"
-              className="img-responsive"
-              height={200}
-              width={260}
-              //fill={}       
-              alt=""
-            />
+            <div className={styles.image_margin}>
+              <Image
+                priority
+                src="/images/profile.png"
+                className="img-responsive"
+                height={200}
+                width={260}
+                //fill={}       
+                alt=""
+              />
+            </div>
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           
           </>
